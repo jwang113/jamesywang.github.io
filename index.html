@@ -1,149 +1,187 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>James Wang | Engineering Portfolio</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <style>
-        body {
-            margin: 0;
-            background: #f5f5f7;
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
-            color: #222;
-        }
+<title>James Wang | Engineering Portfolio</title>
 
-        .container {
-            max-width: 850px;
-            margin: 50px auto;
-            background: white;
-            padding: 50px;
-            border-radius: 14px;
-            box-shadow: 0 8px 30px rgba(0,0,0,.08);
-        }
+<style>
 
-        h1 {
-            margin-bottom: 8px;
-            font-size: 42px;
-        }
+body{
+    margin:0;
+    background:#f5f5f7;
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;
+    color:#222;
+}
 
-        h2 {
-            margin-top: 40px;
-            margin-bottom: 15px;
-            color: #333;
-            border-bottom: 2px solid #e5e5e5;
-            padding-bottom: 6px;
-        }
+.container{
+    max-width:900px;
+    margin:50px auto;
+    background:white;
+    padding:50px;
+    border-radius:14px;
+    box-shadow:0 8px 30px rgba(0,0,0,.08);
+}
 
-        .subtitle {
-            color: #666;
-            font-size: 18px;
-            margin-bottom: 30px;
-        }
+.header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:40px;
+}
 
-        p {
-            line-height: 1.7;
-            font-size: 16px;
-        }
+.header-text{
+    flex:1;
+}
 
-        ul {
-            line-height: 1.8;
-            padding-left: 20px;
-        }
+h1{
+    margin:0;
+    font-size:42px;
+}
 
-        .buttons {
-            margin-top: 30px;
-            margin-bottom: 30px;
-        }
+.subtitle{
+    margin-top:10px;
+    color:#666;
+    font-size:18px;
+}
 
-        .button {
-            display: inline-block;
-            text-decoration: none;
-            background: #0066cc;
-            color: white;
-            padding: 12px 22px;
-            margin-right: 12px;
-            margin-bottom: 10px;
-            border-radius: 8px;
-            font-weight: 600;
-            transition: 0.2s;
-        }
+.headshot{
+    width:180px;
+    height:180px;
+    object-fit:cover;
+    border-radius:50%;
+    border:4px solid #eee;
+    box-shadow:0 6px 20px rgba(0,0,0,.12);
+}
 
-        .button:hover {
-            background: #004d99;
-        }
+p{
+    font-size:16px;
+    line-height:1.7;
+}
 
-        .experience li {
-            margin-bottom: 6px;
-        }
+h2{
+    margin-top:40px;
+    border-bottom:2px solid #e6e6e6;
+    padding-bottom:6px;
+}
 
-        footer {
-            margin-top: 45px;
-            color: #777;
-            font-size: 14px;
-        }
+.buttons{
+    margin:35px 0;
+}
 
-    </style>
+.button{
+    display:inline-block;
+    padding:12px 22px;
+    margin-right:12px;
+    margin-bottom:10px;
+    border-radius:8px;
+    background:#0066cc;
+    color:white;
+    text-decoration:none;
+    font-weight:600;
+    transition:.2s;
+}
+
+.button:hover{
+    background:#004e9c;
+}
+
+ul{
+    line-height:1.9;
+}
+
+footer{
+    margin-top:45px;
+    color:#777;
+    font-size:14px;
+}
+
+@media (max-width:700px){
+
+.header{
+    flex-direction:column-reverse;
+    text-align:center;
+}
+
+.headshot{
+    width:150px;
+    height:150px;
+}
+
+}
+
+</style>
+
 </head>
 
 <body>
 
 <div class="container">
 
-    <h1>James Wang</h1>
+<div class="header">
 
-    <div class="subtitle">
-        Mechanical Engineering Student • Georgia Institute of Technology
-    </div>
+<div class="header-text">
 
-    <p>
-        I'm a mechanical engineering student at Georgia Tech with experience spanning Formula One,
-        aerospace, and electric vehicles. My interests lie at the intersection of engineering,
-        software, data analytics, and quantitative decision making. Throughout my internships I've
-        enjoyed building analytical tools, developing data pipelines, and designing hardware used in
-        high-performance engineering environments.
-    </p>
+<h1>James Wang</h1>
 
-    <div class="buttons">
-        <a class="button" href="James_Wang_Portfolio.pdf">Engineering Portfolio</a>
+<div class="subtitle">
+Mechanical Engineering Student • Georgia Institute of Technology
+</div>
 
-        <!-- Uncomment once you upload your resume -->
-        <!--
-        <a class="button" href="James_Wang_Resume.pdf">Resume</a>
-        -->
+<p>
+I'm a mechanical engineering student at Georgia Tech with experience spanning Formula One,
+aerospace, and electric vehicles. My interests lie at the intersection of engineering,
+software, data analytics, and quantitative decision making. Throughout my internships I've
+enjoyed building analytical tools, developing data pipelines, and designing hardware used in
+high-performance engineering environments.
+</p>
 
-        <a class="button" href="https://www.linkedin.com/in/jamesywang88" target="_blank">
-            LinkedIn
-        </a>
-    </div>
+</div>
 
-    <h2>Experience</h2>
+<img src="headshot.jpg" class="headshot" alt="James Wang">
 
-    <ul class="experience">
-        <li>McLaren Formula One Team</li>
-        <li>SpaceX</li>
-        <li>Tesla</li>
-        <li>Boeing</li>
-    </ul>
+</div>
 
-    <h2>About Me</h2>
+<div class="buttons">
 
-    <p>
-        My portfolio highlights projects ranging from mechanical design and composites to
-        race strategy analytics, Python software development, manufacturing tooling, and
-        systems engineering. I've worked on projects involving CAD, finite element analysis,
-        hydraulics, telemetry analysis, SQL databases, Power BI dashboards, and full-stack
-        engineering tools used in production and race operations.
-    </p>
+<a class="button" href="James_Wang_Portfolio.pdf">
+Engineering Portfolio
+</a>
 
-    <p>
-        If you're interested in learning more about any of my work, please feel free to reach
-        out through LinkedIn.
-    </p>
+<a class="button" href="https://www.linkedin.com/in/jamesywang88" target="_blank">
+LinkedIn
+</a>
 
-    <footer>
-        © 2026 James Wang
-    </footer>
+</div>
+
+<h2>Experience</h2>
+
+<ul>
+<li>McLaren Formula One Team</li>
+<li>SpaceX</li>
+<li>Tesla</li>
+<li>Boeing</li>
+</ul>
+
+<h2>About Me</h2>
+
+<p>
+My portfolio highlights projects ranging from mechanical design and composites to race strategy analytics,
+Python software development, manufacturing tooling, and systems engineering. I've worked on projects
+involving CAD, finite element analysis, hydraulics, telemetry analysis, SQL databases, Power BI dashboards,
+and full-stack engineering tools used in production and race operations.
+</p>
+
+<p>
+Feel free to explore my portfolio or connect with me on LinkedIn.
+</p>
+
+<footer>
+
+© 2026 James Wang
+
+</footer>
 
 </div>
 

@@ -1,2 +1,2 @@
-# jwang113.github.io
+# jamesywang.github.io
 James Y Wang's Portfolio
